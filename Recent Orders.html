@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Recent Orders</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="WorryFreeBaking.css" rel="stylesheet">
+
+	<style>
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  #FF1493;
+  color: white;
+}
+			
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		.container-ad-box p {
+			height: 130px;	
+			}
+		}
+		
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+		.container-ad-box p {				
+			height: 95px;		
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.container-ad-box p {
+			height: auto;		
+		}  
+	}		
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+	
+	<div class="row-fluid">	
+		<div class="col-sm-3 mid addbottommargin">
+			<img class="img img-responsive img-center img-contacts" src="Images/Logo.jpg"/>
+		</div>
+		<div class="col-sm-9 topnav">
+		  <a class="active" href="LetsShop.html">Products</a>
+		  <a href="LetsBake.html">Recipes</a>
+		  <a href="LetsLearn.html">Learn</a>
+		  <a href="Login.html">Login</a>
+		   <input type="text" placeholder="Search..">
+		</div>
+	</div>	
+		
+
+<div class="container-fluid">
+	<div class="row">	
+		<div class="col-sm-12 block-padding">
+			<h1 class="titleName header">Recent Orders</h1>
+		</div> 
+			
+		<div class="col-sm-3 block-padding">
+				
+				<h3 class="title-header green mt10">Helpful Links</h3>
+					<ul class="list list-unstyled lh20 pl20 item-line3">
+						<li class="pt10"><i class="glyphicon glyphicon-lock"> </i>	<a href=""> 
+							Previous Orders</a></li>
+						<li><i class="glyphicon glyphicon-lock"> </i>	<a href=""> 
+							Account Information</a></li>	
+					</ul>
+			
+			</div>
+				<div class="col-sm-9 row addbottommargin mid ">
+		
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/CoconutFlour.jpg"/>
+							<p><b>Coconut Flour</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)" src="Images/AlmondFlour.jpg"/>
+							<p><b>Almond Milk</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/SteviaFlour.jpg"/>
+							<p><b>Stevia</b></p>
+					</div>
+					<div class="col-xs-6 col-sm-3 img-center addbottommargin ">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/AlmondFlour.jpg"/>
+							<p><b>Almond Flour</b></p>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>	
+</div>	 
+</body>
+</html>

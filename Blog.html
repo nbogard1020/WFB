@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lets Talk</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="WorryFreeBaking.css" rel="stylesheet">
+	
+	
+<style>
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  #FF1493;
+  color: white;
+}
+			
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		.container-ad-box p {
+			height: 130px;	
+			}
+		}
+		
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+		.container-ad-box p {				
+			height: 95px;		
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.container-ad-box p {
+			height: auto;		
+		}  
+	}		
+</style>
+	<script>
+		function validateForm() {
+		  var x = document.forms["myForm"]["fname"].value;
+		  if (x == "" || x == null) {
+			alert("Name must be filled out");
+			return false;
+		  }
+		}
+		
+		function validateForm() {
+		  var x = document.forms["myForm"]["Issue"].value;
+		  if (x == "" || x == null) {
+			alert("Issue must be filled out");
+			return false;
+		  }
+		}
+		function toggle(id) {
+			var element = document.getElementById(id);
+			if(element.style.display == 'block') {
+				element.style.display = 'none';
+				element.style.visibility = 'hidden';
+			} else {
+				element.style.display = 'block';
+				element.style.visibility = 'visible';
+			}
+		}
+	</script>
+	
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+	
+	<div class="row-fluid">	
+		<div class="col-sm-3 mid addbottommargin">
+			<img class="img img-responsive img-contacts img-center" src="Images/Logo.jpg"/>
+		</div>
+		<div class="col-sm-9 topnav">
+		  <a class="active" href="LetsShop.html">Products</a>
+		  <a href="LetsBake.html">Recipes</a>
+		  <a href="LetsLearn.html">Learn</a>
+		  <a href="Login.html">Login</a>
+		   <input type="text" placeholder="Search..">
+		</div>
+	</div>	
+	
+	
+	<div class="row addbottommargin">
+		<div class="col-sm-12">
+				
+			<h4 class="greenbanner">Baking Blog</h4>
+				<div class="row ml10">  
+			
+				<!-- Blog 1 -->
+					<h4>Question of the week:<span class="date"> - What is your favorite egg free holiday dessert?</span></h4>
+						<form action="/action_page.php">
+						  <input type="file" id="myFile" name="filename">
+						  <input type="submit">
+						</form>
+				</div>	
+				
+			</hr>
+				
+			<div class="well well-sm">
+				<h4>Lets Talk: How Can We Help?</h4>
+				
+				<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+					Name: <input type="text" name="fname">
+					Issue: <input type="text" name="Issue">
+					<input type="submit" value="Submit">
+				</form>
+	
+			</div>
+
+			<div class="well well-sm">
+				<h4>Topic of the Week: Apple Sauce or Flax Egg?</h4>
+					
+				
+	
+			</div>
+		
+	</div>
+</div>	
+	
+</div>
+</body>
+</html>
